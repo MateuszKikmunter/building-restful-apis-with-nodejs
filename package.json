@@ -4,7 +4,7 @@
   "description": "Repository to track progress in LinkedIn Learning course Building RESTful APIs with Node.js and Express which is part of Become MEAN stack developer path.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./index.js --exec babel-node -e js"
   },
   "repository": {
     "type": "git",
