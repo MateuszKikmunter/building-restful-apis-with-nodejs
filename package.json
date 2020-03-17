@@ -1,0 +1,22 @@
+{
+  "name": "building-restful-apis-with-nodejs",
+  "version": "1.0.0",
+  "description": "Repository to track progress in LinkedIn Learning course Building RESTful APIs with Node.js and Express which is part of Become MEAN stack developer path.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateuszKikmunter/building-restful-apis-with-nodejs.git"
+  },
+  "author": "Mateusz Kikmunter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateuszKikmunter/building-restful-apis-with-nodejs/issues"
+  },
+  "homepage": "https://github.com/MateuszKikmunter/building-restful-apis-with-nodejs#readme",
+  "dependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
