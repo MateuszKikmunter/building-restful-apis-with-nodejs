@@ -42,7 +42,7 @@ export const updateContact = (req, res) => {
 };
 
 export const deleteContact = (req, res) => {
-    Contact.remove({ _id: req.params.id }, (err, contact) => {
+    Contact.deleteOne({ _id: req.params.id }, (err, contact) => {
         if(err) {
             res.send(err);
         }
