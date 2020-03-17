@@ -12,7 +12,7 @@ export const addNewContact = (req, res) => {
         }
         res.json(contact);
     });
-}
+};
 
 export const getContacts = (req, res) => {
     Contact.find({}, (err, contact) => {
@@ -21,7 +21,7 @@ export const getContacts = (req, res) => {
         }
         res.json(contact);
     });
-}
+};
 
 export const getContact = (req, res) => {
     Contact.findById(req.params.id, (err, contact) => {
@@ -30,4 +30,13 @@ export const getContact = (req, res) => {
         }
         res.json(contact);
     });
-}
+};
+
+export const updateContact = (req, res) => {
+    Contact.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true, useFindAndModify: false }, (err, contact) => {
+        if(err) {
+            res.send(err);
+        }
+        res.json(contact);
+    });
+};
