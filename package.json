@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MateuszKikmunter/building-restful-apis-with-nodejs#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.5",
     "nodemon": "^2.0.2"
