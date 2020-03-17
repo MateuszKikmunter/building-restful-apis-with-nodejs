@@ -1,6 +1,10 @@
 const routes = (app) => {
     app.route('/contact')
-        .get((req, res) => {
+        .get((req, res, next) => {
+            console.log(`Request from: ${ req.originalUrl }`);
+            console.log(`Request type: ${ req.method }`);
+            next();
+        }, (req, res, next) => {
             res.send('GET request successful!');
         })
 
